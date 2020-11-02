@@ -121,7 +121,7 @@ def user_stats(df):
 def main():
     while True:
         city, month, day = get_filters()
-        df = load_data(city, month, day)
+        df = load_data(city, month, day) # Data file must be located in current directory
 
         time_stats(df)
         station_stats(df)
